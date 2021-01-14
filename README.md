@@ -3,7 +3,7 @@ Listed below is how to setup your coding environment and begin coding under [Get
 
 - [Getting Started](#getting-started)
   - [Working on your Desktop](#working-on-your-desktop)
-  - [Working Online (Repl.it)](#working-on-repl-beta)
+  - [Working Online with Repl.it (Beta)](#working-on-repl-beta)
 - [Game Rules](#game-rules)
     - [Overview](#overview)
     - [Objective](#objective)
