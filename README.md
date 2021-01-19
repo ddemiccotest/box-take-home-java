@@ -237,12 +237,12 @@ If a player makes a move that is not legal, the game ends immediately and the ot
 
 Your program should accept command line flags to determine which mode to play in:
 ```
-$ boxshogi -i
+$ java Main -i
 ```
 In **interactive mode**, two players enter keyboard commands to play moves against each other.
 
 ```
-$ boxshogi -f <filePath>
+$ java Main -f <filePath>
 ```
 In **file mode**, the specified file is read to determine the game state and which moves to make.
 
@@ -260,7 +260,7 @@ At the beginning of each turn, your program should output the following:
 
 For example, this is how a game would begin:
 ```
-$ boxshogi -i
+$ java Main -i
 5 | N| G| R| S| D|
 4 |__|__|__|__| P|
 3 |__|__|__|__|__|
