@@ -20,11 +20,11 @@ Listed below is how to setup your coding environment and begin coding under [Get
 
 ## Getting Started
 
-When you accepted the assignment, this Github repo was created. This is where your assignment code will reside. This is what will be viewed and graded by us. Anytime code is pushed to this repo our autograder is run. **You will ultimately be graded on passing the tests run by the autograder.** You can view the autograder results by clicking on the `x` or `check` next to the most recent commit hash. You must add a commit before you see this. This is shown below.
+When you accepted the assignment, this Github repo was created. This is where your assignment code will reside. This is what will be viewed and graded by us. Anytime code is pushed to this repo our autograder is run. **You will ultimately be graded on passing the tests run by the autograder.** You can view the autograder results by clicking on the <img src="./media/autograder_check.png" width="25" height="25" />, <img src="./media/autograder_x.png" width="25" height="25" /> or <img src="./media/autograder_dot.png" width="25" height="25" /> next to the most recent commit hash. You must add a commit before you see this. This is shown below.
 
 ![](media/autograder.gif)
 
-Some starter code is provided and a utility function. You must use the starter code provided! You can also use the utility function provided to handle some of the tedious input and output so that you don't need to implement it yourself. The utility function can be modified to suit your needs. It is also optional; not required to be used.
+Some starter code is provided and a utility function. **You must use the starter code provided! Please keep the directory structure for the starter code so our autograder can find the main method to run.** You can also use the utility function provided to handle some of the tedious input and output so that you don't need to implement it yourself. The utility function can be modified to suit your needs. It is also optional; not required to be used.
 
 You can work on this project locally on your desktop or online on Repl.it.
 
@@ -53,21 +53,22 @@ The test runner is provided as a binary, and supports macOS, Windows 10, and Ubu
 The test runner and test cases can be found in the `test_runners` and `test_cases` folder respectively.
 
 ##### Running the test runner
-1. To invoke the test runner, navigate to the `test_runners` folder and execute the version for your operating system. e.g. `./test-runner-mac`, or on Windows, `cmd /K test-runner-windows.exe`
+- First compile the code by running javac `<path-to-Main.java>`
+- To invoke the test runner, navigate to this repo in your terminal and execute the version for your operating system. e.g. `./test_runners/test-runner-mac`, or on Windows, `cmd /K ./test_runners/test-runner-windows.exe`
 **Notes:**
 - On windows, pass the `/K` option to keep the runner open after execution
-- Make sure the runner is executable via the terminal by running `chmod a+x test-runner-mac` or `chmod a+x test-runner-linux`. On Windows, right click the file and navigate the `properties` menu
+- Make sure the runner is executable via the terminal by running `chmod a+x ./test_runners/test-runner-mac` or `chmod a+x ./test_runners/test-runner-linux`. On Windows, right click the file and navigate the `properties` menu
 
 ##### Supported flags
 `-r` reset: this resets the `.command` file in case the path/way you run your program in file mode changes
 `-v` verbose: this will print out the difference in the expected output and actual output of failed tests, along with an explanation of the differences/errors
-`-f` filter: filters test cases based on a string. e.g. `./test-runner-mac -f "governance"` will run tests that have governance in their name.
+`-f` filter: filters test cases based on a string. e.g. `./test_runners/test-runner-mac -f "governance"` will run tests that have governance in their name.
     **Note:** If using windows, make sure to use double quotes "" or no quotes. Single quotes will not work.
 `-b` break: stops execution of tests after the first encountered failure
 
 **Note:** You can combine flags, although if you're using the filter flag, the filter string must be right after. For example, both of these would work equivalently:
-- `./test-runner-mac -b -f 'governance'`
-- `./test-runner-mac -f 'governance' -b`
+- `./test_runners/test-runner-mac -b -f 'governance'`
+- `./test_runners/test-runner-mac -f 'governance' -b`
 
 Note: the test cases aren't completely exhaustive — there are too many variations of illegal moves for creating a totally exhaustive set to be feasible — but for the purposes of evaluating your solution, you don't need to consider anything not covered by the provided test cases.
 
@@ -86,7 +87,7 @@ This year we are including an option to code this project online on Repl.it. Thi
 - Copy and paster your invitation link in a new tab 
 - Then click on the <img src="./media/work_in_repl.png" width="80" height="25" /> button at the top of this README. You will be redirected to your repo in Repl.
 - Once redirected, you can write code and run tests.
-- Tests can be run by pressing the green `Run` button at the top of REPL.
+- Tests can be run by pressing the green `Run` button at the top of REPL. If the button doesn't show up, refresh the page.
 - **Common Issues**
     - **Not redirected to your Repl** - You must be logged into Repl in the browser you use to open your repo
 
